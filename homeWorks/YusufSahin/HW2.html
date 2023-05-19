@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    .container {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #FF0000;
+      text-align: center;
+    }
+
+    #image-map {
+      width: 400px;
+      height: 300px;
+      background-image: url('image.jpg');
+      position: relative;
+    }
+
+    #image-map a {
+      display: block;
+      position: absolute;
+      border: 2px solid #0000FF;
+    }
+
+    #image-map a:hover {
+      background-color: rgba(0, 0, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Image, Image Map</h1>
+    <img src="image.jpg" width="400" height="300">
+    <div id="image-map">
+      <a href="http://Youtube.com" style="top: 100px; left: 50px; width: 100px; height: 50px;"></a>
+      <a href="http://Google.com" style="top: 200px; left: 200px; width: 150px; height: 100px;"></a>
+    </div>
+  </div>
+</body>
+</html>
