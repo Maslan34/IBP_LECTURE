@@ -1,0 +1,48 @@
+<!-- 
+    • First, create a form. Have inputs and button. Then implement it with
+    Form Action using Get and Post methods with different target
+    attributes.
+    • Addition HW: Implement a simple canvas application in HTML5.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4</title>
+</head>
+<body>
+    <!-- _blank-> yan sekma, _self->mevcut site -->
+    <form action="https://www.google.com.tr/" method="get" target="_blank"> 
+    
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname">
+
+        <button type="submit">Submit</button>
+
+    </form>
+    
+    <br>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+    <script>
+		var canvas = document.getElementById("myCanvas"); //canvas bilgilerini alma.
+		var ctx = canvas.getContext("2d"); //context ayarlama
+		
+		ctx.fillStyle = "#FFFF0"; //Renk verme
+		ctx.fillRect(0, 0, canvas.width, canvas.height); //Diktorgen cizdirme
+		
+		ctx.beginPath();
+		ctx.arc(200, 200, 50, 0, 2*Math.PI);  //daire çizimi
+		ctx.fillStyle = "#FFFF00"; //renk verme
+		ctx.fill(); //daire çizilir
+		ctx.closePath(); //çizim sonlandırılır.
+	</script>
+</body>
+</html>

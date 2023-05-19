@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: white;
+            background-color: rgb(35, 46, 172);
+            margin: 2x;
+            font-size: 25px;
+        }
+        #example-id{
+            color: green;
+        }
+    </style>
+    <!-- Multiple CSS -->
+    <style type="text/css">
+        body{
+            background-color: gray;
+        }
+    </style>
+    <style type="text/css">
+        p{
+            background-color: blue;
+        }
+    </style>
+
+    <script src="example.js"></script> <!-- Aynı dizindeki JavaScript dosyasını dahil etme. -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Aynı dizindeki CSS dosyasını dahil etme -->
+    <!-- Alt alta 2 tane css linki olup ikisindede aynı olay yazıyorsa en son yazılan link çalışır -->
+</head>
+
+<!-- Div -> belirli bir bölümü gruplar 
+    Span -> belirli bir metin parçasını gruplar.
+-->
+<body>
+    <h2>Welcome to Div</h2>
+
+    <div>div tag</div>
+    <div>div tag</div>
+    <div>div tag</div>
+    <div>div tag</div>
+
+    <h2>Welcome to Span</h2>
+
+    <p><span style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing</span>  elit. Asperiores illum possimus unde tempora quaerat in, numquam excepturi accusantium maiores saepe, pariatur distinctio exercitationem expedita enim repellat! Inventore dolor veniam labore.</p>
+
+    <!-- Class -->
+    <div class="example-class"></div>
+    <div class="class1 class2"></div> <!-- Çoklu class-->
+
+    <!-- ID -->
+    <!-- iki farklı ögede aynı isimde iki id olamaz. -->
+    <div id="example-id">id kullanımı</div>
+
+    <!-- Javascript -->
+    <script>
+        console.log("Hello, world!") // Tarayıcının konsoluna yazdırır.
+        
+    </script>
+</body>
+</html>
