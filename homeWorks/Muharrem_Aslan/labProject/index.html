@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Registration</title>
+</head>
+<body>
+    
+     <h2>Student Registration</h2>
+    <form method="POST" action="student_register2.php">
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="full_name" id="full_name" required><br><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male" checked> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
