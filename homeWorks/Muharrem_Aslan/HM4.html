@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H4</title>
+
+  <style>
+    canvas{
+      border: 1px solid black;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <H1>_blank Attribute</H1>
+  <form action="submit.php" method="get" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+  
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+  
+  <br><br>
+  <H1>_self Attribute</H1>
+  <form action="submit.php" method="post" target="_self">
+    <label for="message">Type A Message:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+  
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
+
+  <H2>Square</H2>
+  <canvas id="Square" width="800" height="400"></canvas>
+
+    <script>
+      //Getting Element
+      var canvas = document.getElementById("Square");
+    
+     
+      var Square = canvas.getContext("2d");
+    
+      // Drawwing
+      var SquareElement = document.getElementById("Square");
+      var Square = SquareElement.getContext("2d");
+      Square.beginPath();
+      Square.arc(370,200,80,0,2*Math.PI);
+      Square.font = "20px Arial";
+      Square.fillText("Muharrem Aslan", 300, 200);  
+      Square.stroke();
+  
+    </script>
+
+<script>
+  //First Diagonal
+  var SquareElement2 = document.getElementById("Square");
+  var SquarDiagonal = SquareElement2.getContext("2d");
+  SquarDiagonal.moveTo(0, 0);
+  SquarDiagonal.lineTo(250, 150);
+  SquarDiagonal.stroke();
+
+  </script>
+
+ 
+<script>
+  //Second Diagonal
+  var SquareElement3 = document.getElementById("Square");
+  var SquarDiagona2 = SquareElement3.getContext("2d");
+  SquarDiagona2.moveTo(450, 250);
+  SquarDiagona2.lineTo(800, 400);
+  SquarDiagona2.stroke();
+
+  </script>
+    
+</body>
+</html>
